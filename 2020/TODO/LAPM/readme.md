@@ -205,7 +205,7 @@ port가 80이면 생략가능
 
 ip:port/info.php
 
-![pipInfo page](https://user-images.githubusercontent.com/65690925/99492735-72636980-29b1-11eb-9b71-eac2ac54ed85.JPG)
+![pipInfo page](https://user-images.githubusercontent.com/65690925/99493237-341a7a00-29b2-11eb-93c9-fd01dcfb053b.JPG)
 
 실행 시 설치가 확인된다. 
 
