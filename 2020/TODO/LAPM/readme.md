@@ -73,7 +73,8 @@ sudo apt-get install apache2
 apache2 -v 
 sudo service apache2 start
 
-[ start, stop, restart 등 명령어 존재 ]
+
+start, stop, restart 등 명령어 존재한다.
 
 실행 후에 아무런 변화가 없는 것처럼 보여서 실망할 수 있지만, 
 서버가 돌아가는지 절차를 통해서 확인하자.
@@ -94,7 +95,7 @@ sudo service apache2 start
 
 
 ![linux netstat](https://user-images.githubusercontent.com/65690925/99487703-4b556980-29aa-11eb-8a25-99bdf5076feb.JPG)
-![apache 실행](https://user-images.githubusercontent.com/65690925/99487706-4c869680-29aa-11eb-95b7-be93c7d0c580.JPG)
+![apache 실행](https://user-images.githubusercontent.com/65690925/99488074-f82fe680-29aa-11eb-8479-4888e607fb5e.JPG)
 
 ### 추가 
 1. 방화벽 설정
