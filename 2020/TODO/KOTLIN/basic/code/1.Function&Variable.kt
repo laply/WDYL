@@ -1,15 +1,4 @@
 
-fun main(args: Array<String>) : Unit { // 반환값이 없을 경우 Unit 사용 
-    println(sum(1, 2));
-    
-
-    val person = Person("hi", 20)
-
-    person.age = 21 // 나이는 바꿀수 있지만 이름은 변경불가 
-
-    println(person.name) 
-}
-
 // function 
 // 같은 함수의 다른 표현 
 fun sum (a: Int, b: Int) : Int {
@@ -35,4 +24,10 @@ fun variable(){
     // 변경 불가능한 변수 -- 객체 참조 할때 많이 사용 한다.
     val hi = "aaa"
 }
- 
+
+fun main(args: Array<String>) : Unit { 
+    println(sum(1, 2));
+    val person = Person("hi", 20)
+    person.age = 21 // 나이는 바꿀수 있지만 이름은 변경불가
+    println(person.name) 
+}
