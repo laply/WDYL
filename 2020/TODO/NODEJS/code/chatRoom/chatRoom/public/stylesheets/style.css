@@ -1,0 +1,39 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+}
+
+#chatLog {
+    width: 80%;
+}
+
+#user {
+    width: 20%;
+    border: 1px solid gainsboro;
+}
+
+.btn.user-head {
+    width: 100%;
+    background-color: wheat;
+}
+
+#chat {
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    width: 10%;
+}
+
+#message {
+    width: 35%;
+}
+
+.btn.btn-info {
+    width: 50%;
+    height: 45px;
+    font-size: 20px;
+}

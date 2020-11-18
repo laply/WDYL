@@ -1,0 +1,92 @@
+// class --------------------------------------
+// 파일명과 클래스 명이 동일하지 않아도되고,
+// 한 파일 내에 몇개의 클래스가 있어도 상관없다. 
+class Person(
+    val name: String,
+    var age: Int
+)
+
+fun classinfo () : Unit {
+
+   val button: Button = Button() // 객체 생성시 new 키워드는 사용하지 않는다.
+   val button2 = Button() // Button 생성자에의해 타입 추론이 가능하므로 : Button 구문은 생략할 수 있다. 
+   button.id = 100;
+   println(button.id)
+
+}
+
+// Visibility Modifier 가시성 변경자 
+// public, protected, private 같은 클래스내, internal(같은 모듈 내)
+
+
+// 생성자 - 주생성자, 부생성자 
+// 주생성자가 생략 되어있는 상태
+class Button {
+    var id: Int = 0
+}
+
+// 주생성자가 생략되있지 않는 상태 
+class Button2(){
+    var id: Int = 0
+}
+
+// id는 Nullable 타입이 아니기 때문에 반드시 초기화되어야한다. 
+class Button2(_id: Int){
+    var id: Int = _id
+}
+// 주생성자의 정의와 프로퍼티 정의를 한번에하는 문법
+class Button3(var id: Int){
+    // 클레스 내부에 더이상 아무것도 전재하지 않다면 {}도 생략가능하다.
+}
+
+class Button4(var id: Int, val x: Int = 0, val y:Int = 0 )
+// 매개 변수가 두개 이상일 경우 디폴트 값은 뒤에서부터 순서대로 설정해야한다.
+
+fun main(args: Array<String>){
+    val button3 = Button(100)
+    val button4 = Button(101, 10, 10);
+}
+
+// 부생성자
+// kotlin에서는 주생성자의 매개변수에 디폴트 값을 설정할 수 있기때문에 여러개의 생성자를 생성해야할 필요성이 적다.
+// 하지만 매개변수의 타입이 다른경우 등의 필요한경우가 있기때문에 부생성자를 정의할 수 있도록 되어있다. 
+
+class Button5 { 
+    // 주 생성자가 없는데, 이는 매개변수가 없는 생성자가 없다는 것을 의미한다. 
+    // 매개변수 없는 생성자도 사용하고 싶다면 주생성자든 부생성자든 매개변수 없는 생성자를 설정해주어야한다.  
+    var id: Int = 0
+    var text: String = ""
+    
+    constructor(id: Int){
+        this.id = id
+    }
+    constructor(id: Int, text: String){
+        this.id = id
+        this.text = text
+    }
+    
+}
+
+// 주 생성자가 정의된 경우 부 생성자에서는 반드시 주 생성자를 재호출 해야한다. 
+// 실수로 초기화되는 프로퍼티들을 놓치지 않기 위해서
+
+class Button6(var id: Int){
+    var text: String = ""
+    var isCheckbox = false
+
+    constructor(id: Int, text: String) : this(id) { // 부생성자에서 주 생성자를 재 호출하는 방법은 부 생성자 선언부 옆에 : this 키워드를 사용하면된다.
+        this.text = text
+    }
+
+    constructor(id: Int, text: String, isCheckbox: Boolean) : this(id, text) { // 다른 부생성자 에서도 재호출 해야됨 
+        this.isCheckbox = isCheckbox
+    }
+
+}
+
+// BUT, 인자에 대한 디폴트 값을 제공하기 위해 부 생성자를 여러개 만들지 말라. 대신 파라미터의 디폴트 값을 주 생성자 시그니처에 직접 명시하라.
+
+class Button7 (var id: Int, var text: String ="", var isCheckbox: Boolean = false) 
+// Button7과 6는 같은 class 이다.
+
+
