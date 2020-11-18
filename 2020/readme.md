@@ -27,7 +27,6 @@ Parson detection
 pose estimation
 keypoint rescoring
 
-
 3D Graphics 
 - opengl shader
 - webgl and opengl 
