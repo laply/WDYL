@@ -2,11 +2,11 @@
 
 ## 블로그 및 정보
 
-https://github.com/Integerous/goQuality-dev-contents
+- https://github.com/Integerous/goQuality-dev-contents
 
 ## 강의 및 개발 사이트
 
-https://edu.goorm.io/
-https://programmers.co.kr/
+- https://edu.goorm.io/
+- https://programmers.co.kr/
 
 ## 기타 사이트
