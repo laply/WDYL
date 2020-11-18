@@ -1,5 +1,8 @@
 # Learning 2020 
 
+상반기 공부한 내용 시간날 때 마다 재 기록하기!
+
+
 Lang ( Deeply )
 - C & C++ 
 - Python 
