@@ -39,6 +39,8 @@ VirtualBox를 실행하여 새로 만들기를 통해
 생성된 가상머신을 실행시, 광학 드라이브를 다운 받은 ubuntu server의 iso 파일을 선택하여 실행 후 
 설정을 완료하면 설치가 마무리 된다. 
 
+![virtualbox](https://user-images.githubusercontent.com/65690925/99487467-c5392300-29a9-11eb-8c8a-08dbc34f3034.JPG)
+
 ### 추가
 
 내부 IP를 할당 받기 위한 네트워크 설정 
