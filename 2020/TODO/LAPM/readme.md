@@ -54,12 +54,12 @@ virtual box에 새로 만들기 옆으로 설정을 클릭한다.
  어뎁터 2 를 NAT으로 변경한다.
 
 변경 후 내부 IP가 할당된다. 
-![linux server](https://user-images.githubusercontent.com/65690925/99487697-498ba600-29aa-11eb-8842-78d276c0518c.JPG)
-![linux server_enter](https://user-images.githubusercontent.com/65690925/99487693-47c1e280-29aa-11eb-940c-35677d0827a1.JPG)
 
 ## 2. Apache INSTALL
 1에서 설치한 가상 리눅스를 실행한다.
 설치시 설정한 아이디와 비밀 번호를 사용하여 접속한다.
+
+![linux server_enter](https://user-images.githubusercontent.com/65690925/99487693-47c1e280-29aa-11eb-940c-35677d0827a1.JPG)
 
 설치에 앞서 업데이트를 수행한다. 
 sudo apt-get update && sudo apt-get upgrade
