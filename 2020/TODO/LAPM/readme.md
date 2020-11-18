@@ -54,6 +54,8 @@ virtual box에 새로 만들기 옆으로 설정을 클릭한다.
  어뎁터 2 를 NAT으로 변경한다.
 
 변경 후 내부 IP가 할당된다. 
+![linux server](https://user-images.githubusercontent.com/65690925/99487697-498ba600-29aa-11eb-8842-78d276c0518c.JPG)
+![linux server_enter](https://user-images.githubusercontent.com/65690925/99487693-47c1e280-29aa-11eb-940c-35677d0827a1.JPG)
 
 ## 2. Apache INSTALL
 1에서 설치한 가상 리눅스를 실행한다.
@@ -61,7 +63,6 @@ virtual box에 새로 만들기 옆으로 설정을 클릭한다.
 
 설치에 앞서 업데이트를 수행한다. 
 sudo apt-get update && sudo apt-get upgrade
-
 
 아파치2를 설치한다. 
 sudo apt-get install apache2 
@@ -90,6 +91,10 @@ sudo service apache2 start
     ifconfig를 통해 내부 아이피 값을 확인할 수 있다.
     
     웹사이트에 아이피 값을 친다면 아파치 파일 사이트를 확인할 수 있다. 
+
+
+![linux netstat](https://user-images.githubusercontent.com/65690925/99487703-4b556980-29aa-11eb-8a25-99bdf5076feb.JPG)
+![apache 실행](https://user-images.githubusercontent.com/65690925/99487706-4c869680-29aa-11eb-95b7-be93c7d0c580.JPG)
 
 ### 추가 
 1. 방화벽 설정
