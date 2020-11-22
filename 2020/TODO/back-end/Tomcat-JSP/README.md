@@ -136,34 +136,15 @@ sudo mv mysql-connector-java-8.0.22.jar  /var/lib/tomcat9/webapps/ROOT/WEB-INF/l
 
 테스트 코드는 이곳에서 참고 하였다. (감사합니다~) https://titis.tistory.com/88
 
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="java.sql.*"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>DB Connection Test</title>
-    </head>
-<body>
+...
     <%
         String DB_URL = "jdbc:mysql://아이피:3306/데이터베이스";
         String DB_USER = "이름";
         String DB_PASSWORD= "암호";
+...
 
-        Connection conn;
-        Statement stmt;
+전체코드는 /code/dbtest.jsp 파일을 확인바란다. 
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-            stmt = conn.createStatement();
-            conn.close();
-            out.println("MySql jdbc test: connect ok!!");
-        } catch(Exception e) {
-            out.println("error - " + e.getMessage());
-        }
-    %>
-</body>
-</html>
 
 간단한 jsp db 연동 확인 코드 이다. 이전에 설정 해 두었던 mysql 아이디와 비밀번호를 넣고 db를 새로 만든 뒤 그 정보를 넣어 
 ROOT위치에 dbtest.jsp로 저장한다. 
