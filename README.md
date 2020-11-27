@@ -6,9 +6,17 @@
 2020 공부
 
 ### TODO
-- LAPM
-- Django
+WEB
+- Back-End
+    - LAPM
+    - Tomcat-jsp
+    - Node.js
+    - Django
+- Front-End
+    - load-map 정리
+
 - Flutter & FireBase
-- Node.js
+
+- Language
 - Javascript
 - Kotlin
