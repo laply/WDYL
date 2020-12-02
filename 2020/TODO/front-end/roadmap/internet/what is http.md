@@ -1,4 +1,4 @@
-front-end 2020 load map 두번 째
+front-end 2020 load map 두 번째
 
 ## HTTP (HyperText Transfer Protocol)
 
