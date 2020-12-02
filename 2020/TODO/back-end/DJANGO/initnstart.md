@@ -6,7 +6,7 @@ mac os // linux 기반으로 작성
 ## 1. python3 와 pip3를 설치한다
 
 linux 에서 수행 
-sudo apt-get install python3 && sudo apt-get install python3-pip
+sudo apt-get install python3 && sßdo apt-get install python3-pip
 
 ## 1.5 가상 환경 구성하기.
 
