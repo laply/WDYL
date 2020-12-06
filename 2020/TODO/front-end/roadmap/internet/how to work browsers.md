@@ -63,7 +63,6 @@ DOM 트리 구축을 위한 HTML 파싱
 기다리지 않고 배치와 그리기 과정을 시작한다. 
 
 ![helloworld-59361-3](https://user-images.githubusercontent.com/65690925/100848126-0cec9e00-34c4-11eb-9c23-4c41794bdee7.png)
-
 ![helloworld-59361-4](https://user-images.githubusercontent.com/65690925/100848130-0f4ef800-34c4-11eb-91f3-88a6a192f6b6.png)
 
 참고 및 이미지 출처
