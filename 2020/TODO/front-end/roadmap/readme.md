@@ -9,4 +9,4 @@
 # javascript 
 
 - dom-control 
-- 세부 내용 정리
+- 세부 개념 정리
