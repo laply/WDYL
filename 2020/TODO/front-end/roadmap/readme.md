@@ -8,3 +8,5 @@
 
 # javascript 
 
+- dom-control 
+- 세부 내용 정리
